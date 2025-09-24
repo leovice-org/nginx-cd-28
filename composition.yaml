@@ -1,0 +1,11 @@
+apiVersion: composition.krateo.io/v0-1-0
+kind: Nginx
+metadata:
+  name: nginx-instance-1
+  namespace: default
+spec:
+  image:
+    repository: nginx
+    tag: "1.25"
+  service:
+    type: ClusterIP
